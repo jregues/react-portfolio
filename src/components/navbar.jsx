@@ -1,15 +1,23 @@
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <nav>
-      <h2 className='name'>James Egues</h2>
-      <img src='./assets/images/self-image.jpg'></img>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <Router>
+      <nav>
+        <h2 className="name">James Egues</h2>
+        <ul>
+          <li>
+            <Link to="/">About</Link>
+          </li>
+          <li>
+            <Link to="/portfolio">Portfolio</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </nav>
+    </Router>
   );
-}
+};
 
 export default Navbar;

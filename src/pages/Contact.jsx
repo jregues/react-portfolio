@@ -1,14 +1,13 @@
 import React from 'react';
+import EmailForm from '../components/emailForm.jsx';
 
 const Contact = () => {
     return (
-        <div  className='contact'>
+        <div idName='contact' className='contact'>
             <h1>Contact Me</h1>
-            <p>Feel free to reach out to me via email, LinkedIn, or Github!</p>
+            <p>If you would like to reach out to me feel free to send me an email using the form below!</p>
             <div className='contact-info'>
-                <a href="">Email</a>
-                <a href='https://www.linkedin.com/in/james-egues-34ab14299'>LinkedIn</a>
-                <a href='https://github.com/jregues'>Github</a>
+                <EmailForm />
             </div>
         </div>
     );

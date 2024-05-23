@@ -1,20 +1,32 @@
-import './App.css';
-import React from 'react';
-import Navbar from './components/navbar.jsx';
-import Home from './pages/HomePage.jsx';
-import About from './pages/About.jsx';
-import Contact from './pages/Contact.jsx';
+import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "./components/navbar.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
+import About from "./pages/About.jsx";
+import Contact from "./pages/Contact.jsx";
+import Footer from "./components/footer.jsx";
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <h1>Welcome to My Portfolio</h1>
-      <Home />
-      <About />
-      <Contact />
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <Switch>
+          <Route path="/portfolio">
+            <Portfolio />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/">
+            <About />
+          </Route>
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

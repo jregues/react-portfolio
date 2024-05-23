@@ -1,13 +1,36 @@
 * {
   box-sizing: border-box;
   margin: 0;
+
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
 
 body {
-  background-color:  grey;
+  background-color:  rgb(211, 209, 209);
+
+}
+
+p {
+  font-size: 40px;
+}
+
+.about img {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.repos img {
+  width: 1000px;
+  height: 600px;
+}
+
+.repos img:hover {
+  width: 1050px;
+  height: 650px;
 }
 
 .home {
@@ -16,28 +39,37 @@ body {
   justify-content: flex-start;
   width: 99%;
   min-height: 600px;
-  background: burlywood;
+  /* background: burlywood; */
   text-align: center;
-  margin: 32px auto;
+  margin: 0 auto 32px;
   border-radius: 20px;
   padding-bottom: 32px;
 }
 
 h1 {
   margin: 32px 0;
-  color: #fff;
+  
+  /* color: #fff; */
   font-size: 24px;
 }
 
 h3 {
   margin: auto;
-  color: rgb(66, 171, 231);
+  /* color: rgb(66, 171, 231); */
   font-size: 20px;
 }
 
 .name {
   margin: 5px;
   padding: 15px;
+}
+
+nav {
+  background-color: rgb(3, 87, 165);
+  color: azure;
+  margin: 0;
+  padding: 0;
+ 
 }
 
 nav ul {
@@ -51,18 +83,19 @@ nav ul {
   padding: 0;
 }
 
-nav li {
+nav a {
   display: inline;
   padding: 15px;
   margin: 5px;
+  color: azure;
 }
 
-nav li:hover {
+nav a:hover {
   text-decoration: underline;
   color: black;
 }
 
-nav li:active {
+nav a:active {
   text-decoration: wavy;
   color: blue;
 }
@@ -73,7 +106,7 @@ nav li:active {
   justify-content: flex-start;
   width: 99%;
   min-height: 600px;
-  background: burlywood;
+  /* background: burlywood; */
   text-align: center;
   margin: 32px auto;
   border-radius: 20px;
@@ -86,26 +119,59 @@ nav li:active {
   justify-content: flex-start;
   width: 99%;
   min-height: 600px;
-  background: burlywood;
+  /* background: burlywood; */
   text-align: center;
   margin: 32px auto;
   border-radius: 20px;
   padding-bottom: 32px;
 }
 
-.contact-info a {
-  padding: 15px;
-  margin: 5px;
-  text-decoration: none;
+footer  {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(3, 87, 165);
+  
 }
 
-.contact-info a:hover {
+footer a {
+  color: white;
+  padding: 15px;
+  margin: 15px;
+}
+
+footer a:hover {
   text-decoration: underline;
   color: black;
   font-weight: bolder;
 }
 
-.contact-info a:active {
+footer a:active {
   text-decoration: wavy;
   color: blue;
+}
+
+@media only screen and (max-width: 1000px) {
+  .repos img {
+    width: 600px; /* Make the image responsive to the screen width */
+    height: 450px; /* Maintain aspect ratio */
+  }
+
+  .repos img:hover {
+    /* Adjust hover styles for smaller screens if needed */
+    width: 650px;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .repos img {
+    width: 300px; /* Make the image responsive to the screen width */
+    height: 150px; /* Maintain aspect ratio */
+  }
+
+  .repos img:hover {
+    /* Adjust hover styles for smaller screens if needed */
+    width: 350px;
+    height: 200px;
+  }
 }
