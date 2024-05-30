@@ -49,3 +49,4 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 ## Links
 
 https://github.com/jregues/react-portfolio
+https://main--jameseguesportfolio.netlify.app/
