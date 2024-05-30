@@ -7,5 +7,10 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true
+  },
+  resolve: {
+    alias: {
+      'react-router-dom': 'react-router-dom' // Alias for react-router-dom module
+    }
   }
 })
